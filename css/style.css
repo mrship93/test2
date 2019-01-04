@@ -1,0 +1,332 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+   @font-face {
+    font-family: opensans; /* Имя шрифта */
+    src: url(../fonts/opensans.woff); /* Путь к файлу со шрифтом */
+   }
+
+body {
+font-family:opensans;
+  word-wrap: break-word;
+}
+
+
+.start {
+	background:#c4cdd6;
+	z-index:100;
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	overflow:hidden;
+	  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-start {
+display:flex;
+    align-items: center;
+    justify-content: center;
+	width:100%;
+	margin-top:0!important;
+}
+
+.slider h3 {
+	font-size:35px;
+}
+
+.slider p {
+	color:black;
+	font-family:opensans;
+	font-size:22px;
+}
+
+
+
+.slider .item {
+	padding: 200px 100px;
+
+}
+
+.more {
+	background-color:#ff891e;
+	color:white;
+	border:1px solid #ff891e;
+	text-transform:uppercase;
+	border-radius:0px;
+}
+
+
+
+.slider .btn-default:hover {
+			background-color:#ff891e;
+	color:white;
+	border:1px solid #ff891e;
+}
+
+.slider .btn-default:link {
+			background-color:#ff891e;
+	color:white;
+	border:1px solid #ff891e;
+}
+
+.slider .btn-default:active {
+			background-color:#ff891e;
+	color:white;
+	border:1px solid #ff891e;
+}
+
+.slider .btn-default:visited {
+			background-color:#ff891e;
+	color:white;
+	border:1px solid #ff891e;
+}
+.slider .all {
+	background-color:transparent;
+	border:1px solid black;
+	text-transform:uppercase;
+	border-radius:0px;
+}
+
+.slider .all:hover{
+		background-color:transparent;
+	border:1px solid black;
+}
+
+.slider .buttons {
+	margin-top:20px;
+}
+
+.slider .carousel .item {
+height:100vh;
+
+}
+
+.slider .carousel .item img {
+		 
+  color: #5a5a5a;
+
+  background-size:cover;
+  position: absolute;
+  top: 0;
+  left: -200px;
+  min-width: 100%;
+
+}
+
+.slider .carousel-indicators {
+	    left: 5%;
+    z-index: 15;
+    width: 90%;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+
+.slider .carousel-control.left {
+	background-image:none;
+}
+
+.slider .carousel-control.right {
+	background-image:none;
+}
+
+
+
+.slider .carousel-indicators .active {
+	    width:25%;
+    height: auto;
+     background-color: transparent; 
+}
+
+
+.slider .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+	width: 75px;
+    height: 85px;
+    margin-top: -10px;
+    font-size: 30px;
+    background-color: rgba(0,0,0,0.4);
+    position: relative;
+}
+
+.slider .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+	  position:absolute;
+	 left:100%;
+    padding: 50px;
+	margin:0;
+	 transform: translate(-100%, -50%);
+}
+
+
+
+.slider .carousel-control .glyphicon-chevron-left, .carousel-control .icon-next {
+	 position:absolute;
+	 left:0;
+	 margin:0;
+    padding: 50px;
+	 transform: translate(0, -50%);
+}
+
+.slider .glyphicon-chevron-right:before {
+	    content: "\e080";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* margin-right: -50%; */
+    transform: translate(-50%, -50%);
+}
+
+.slider .glyphicon-chevron-left:before {
+	    content: "\e079";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* margin-right: -50%; */
+    transform: translate(-50%, -50%);
+}
+
+
+.slider .pag {
+	background:rgba(0,0,0,0.5);
+}
+
+.slider .pag img {
+	padding:5px;
+}
+
+
+
+.slider .pag p {
+	font-size:10px;
+	color:white;
+	display: inline-block;
+    width: 65%;
+    vertical-align: middle;
+    text-align: -webkit-left;
+}
+
+
+
+
+.slider .slide1 {
+	background:url(../img/slider_1.jpg) no-repeat 30%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+.slider .slide2 {
+	background:url(../img/slider_2.jpg) no-repeat 30%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+.slider .slide3 {
+	background:url(../img/slider_3.jpg) no-repeat 30%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+.slider .slide4 {
+	background:url(../img/slider_4.jpg) no-repeat 30%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+	
+
+
+	.slider .slide1 {
+	background:url(../img/slider_1min.jpg) no-repeat 50%;
+background-size: cover;
+}
+
+.slider .slide2 {
+	background:url(../img/slider_2min.jpg) no-repeat 50%;
+background-size: cover;
+}
+
+.slider .slide3 {
+	background:url(../img/slider_3min.jpg) no-repeat 50%;
+background-size: cover;
+}
+
+.slider .slide4 {
+	background:url(../img/slider_4min.jpg) no-repeat 50%;
+background-size: cover;
+}
+
+.slider .carousel-indicators .active {
+	width:12px;
+	height:12px;
+	background-color:black;
+}
+
+.slider .all {
+	display:none;
+}
+
+.slider .item {
+	padding: 100px 10px;
+	text-align:center;
+	
+}
+
+.slider .more {
+	margin-top:20px;
+	font-size:20px;
+}
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+	.slider .carousel-indicators .active {
+		width:50%;
+	}
+	
+	.slider .item {
+		padding:150px 10px;
+	}
+	
+	.slider .slide1, .slider .slide2, .slider .slide3, .slider .slide4 {
+		background-position:40%;
+	}
+	
+	 .slider .pag {
+	 margin-top:10px;
+ }
+	 
+}
+
+
+
+
+
+
+
+@media (min-width: 1500px) {
+	.slider h3 {
+width:70%;
+
+}
+
+@media (min-width: 2000px) {
+	.slider h3 {
+width:50%;
+
+}
+}
